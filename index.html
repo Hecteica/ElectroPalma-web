@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="es-ES" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="ElectroPalma Energy ofrece instalaciones eléctricas, mantenimiento y reparaciones, placas solares y puntos de recarga para vehículos eléctricos en la Comunidad de Madrid y alrededores."><meta name="keywords" content="electricista Madrid, instalaciones eléctricas, reparaciones eléctricas, placas solares Madrid, autoconsumo, punto recarga coche eléctrico, mantenimiento eléctrico"><title>ElectroPalma Energy | Electricidad, Solar y Recarga</title><script src="https://cdn.tailwindcss.com"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            primary: '#1e293b',
+            secondary: '#475569',
+            accent: '#fbbf24',
+            accentHover: '#f59e0b',
+            bgLight: '#f8fafc',
+            bgSoft: '#f1f5f9'
+          }
+        }
+      }
+    }
+  </script><style>
+    /* ESTILOS DEL LOGO CORREGIDOS Y REDONDEADOS */
+    .electropalma-mark {
+      position: relative;
+      width: 48px; 
+      height: 48px;
+      flex: 0 0 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px; /* <-- Aquí redondeamos el contenedor */
+      overflow: hidden;    /* <-- Corta cualquier esquina que sobresalga */
+      background-color: #ffffff; /* Fondo blanco por si tu logo tiene fondo transparente */
+    }
+    .electropalma-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; 
+      display: block;
+      border-radius: 12px; /* <-- Aquí redondeamos la imagen en sí */
+    }
+    }
+    .electropalma-wordmark {
+      line-height: 1;
+    }
+    .electropalma-wordmark .name {
+      display: block;
+      font-size: 1.15rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: #1e293b;
+    }
+    .electropalma-wordmark .descriptor {
+      display: block;
+      margin-top: 4px;
+      font-size: 8px;
+      line-height: 1;
+      letter-spacing: .14em;
+      font-weight: 700;
+      color: #475569;
+      white-space: nowrap;
+    }
+    .footer-logo .electropalma-mark {
+      width: 40px;
+      height: 40px;
+      flex-basis: 40px;
+    }
+  </style></head><body class="font-sans text-secondary bg-bgLight antialiased selection:bg-accent selection:text-primary">
+
+<nav class="bg-white/95 backdrop-blur border-b border-slate-100 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3" aria-label="ElectroPalma Instalaciones Eléctricas">
+      <span class="electropalma-mark" aria-hidden="true"><img src="images/logo.jpg" alt="Logo ElectroPalma"></span>
+      <span class="electropalma-wordmark"><span class="name">ElectroPalma</span><span class="descriptor">INSTALACIONES ELÉCTRICAS</span></span>
+    </a>
+    
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-primary">
+      <a href="#servicios" class="hover:text-accentHover transition">Servicios</a>
+      <a href="#proceso" class="hover:text-accentHover transition">Cómo trabajamos</a>
+      <a href="#nosotros" class="hover:text-accentHover transition">Nosotros</a>
+      <a href="#contacto" class="hover:text-accentHover transition">Contacto</a>
+    </div>
+    
+    <div class="flex items-center gap-4">
+      <a href="https://wa.me/34604122709?text=Hola%20ElectroPalma%20Energy,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n." class="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accentHover text-primary font-bold py-3 px-5 rounded-full transition">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <button id="mobile-menu-btn" class="md:hidden text-primary text-2xl focus:outline-none p-2" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full left-0 shadow-xl">
+    <div class="flex flex-col px-4 pt-4 pb-6 space-y-2">
+      <a href="#servicios" class="mobile-link block px-4 py-3 text-base font-semibold text-primary rounded-lg hover:bg-bgSoft">Servicios</a>
+      <a href="#proceso" class="mobile-link block px-4 py-3 text-base font-semibold text-primary rounded-lg hover:bg-bgSoft">Cómo trabajamos</a>
+      <a href="#nosotros" class="mobile-link block px-4 py-3 text-base font-semibold text-primary rounded-lg hover:bg-bgSoft">Nosotros</a>
+      <a href="#contacto" class="mobile-link block px-4 py-3 text-base font-semibold text-primary rounded-lg hover:bg-bgSoft">Contacto</a>
+      <a href="https://wa.me/34604122709?text=Hola%20ElectroPalma%20Energy,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n." class="mobile-link block px-4 py-3 mt-4 text-base font-bold text-primary bg-accent rounded-lg text-center">
+        <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="relative pt-24 pb-32 lg:pt-40 lg:pb-48 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="images/hero-image.jpg" alt="Equipo de ElectroPalma trabajando en instalaciones eléctricas y solares" class="w-full h-full object-cover object-center">
+    <!-- AQUÍ ESTÁ LA MAGIA: He añadido "backdrop-blur-sm" al final de esta línea -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-slate-900/20 to-transparent sm:from-slate-900/50 sm:via-slate-900/10 sm:to-transparent backdrop-blur-md"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 text-sm font-semibold text-white mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        Electricidad y energía para hogares y negocios
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight drop-shadow-lg">
+        Soluciones eléctricas <span class="text-accent">seguras y eficientes.</span>
+      </h1>
+      <p class="text-lg text-gray-100 mb-8 leading-relaxed drop-shadow-md font-medium">
+        Realizamos instalaciones eléctricas, mantenimiento y reparaciones, soluciones solares y puntos de recarga para vehículos eléctricos. Trabajamos en la Comunidad de Madrid y alrededores, adaptándonos a las necesidades de cada proyecto.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-10">
+        <a href="#contacto" class="bg-accent hover:bg-accentHover text-primary font-bold py-3 px-8 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
+          Solicitar presupuesto
+        </a>
+        <a href="#servicios" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
+          Ver servicios
+        </a>
+      </div>
+      <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-white drop-shadow-md">
+        <span class="flex items-center"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Comunidad de Madrid y alrededores</span>
+        <span class="flex items-center"><i class="fa-regular fa-clock text-accent mr-2"></i>8:00 – 18:00</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="py-20 bg-white text-center px-4"><div class="max-w-4xl mx-auto"><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-4">ElectroPalma Energy</h2><p class="text-3xl md:text-4xl font-extrabold text-primary leading-tight">
+      Soluciones eléctricas y energéticas pensadas para tu vivienda, negocio o espacio.
+    </p></div></section>
+
+<section class="py-16 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"><div class="rounded-[2rem] overflow-hidden shadow-xl h-[400px]">
+  <img src="images/profesional-cuadro.jpg" alt="Profesional revisando cuadro eléctrico con multímetro" class="w-full h-full object-cover">
+</div><div><h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Un servicio adaptado a cada necesidad</h2><p class="text-secondary mb-8 leading-relaxed">
+          Nos ocupamos de instalaciones, reparaciones, mantenimiento, energía solar y movilidad eléctrica. Analizamos cada caso para ofrecer una solución funcional y adecuada a las características del espacio y a las necesidades del cliente.
+        </p><div class="grid grid-cols-2 gap-6 border-t border-gray-100 pt-8"><div><div class="text-3xl font-black text-primary mb-1"><i class="fa-solid fa-bolt text-accent"></i></div><div class="text-sm font-medium text-secondary">Electricidad general</div></div><div><div class="text-3xl font-black text-primary mb-1"><i class="fa-solid fa-solar-panel text-accent"></i></div><div class="text-sm font-medium text-secondary">Energía solar</div></div><div><div class="text-3xl font-black text-primary mb-1"><i class="fa-solid fa-screwdriver-wrench text-accent"></i></div><div class="text-sm font-medium text-secondary">Mantenimiento y reparación</div></div><div><div class="text-3xl font-black text-primary mb-1"><i class="fa-solid fa-charging-station text-accent"></i></div><div class="text-sm font-medium text-secondary">Recarga eléctrica</div></div></div></div></div></div></section>
+
+<section id="servicios" class="py-24 bg-bgSoft"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-16"><div class="lg:col-span-5 lg:sticky lg:top-28 self-start"><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Nuestros servicios</h2><h3 class="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-6">
+          Electricidad, energía solar y movilidad eléctrica
+        </h3><p class="text-secondary mb-8 leading-relaxed">
+          Ofrecemos soluciones para viviendas, locales, comercios y otros espacios, desde una nueva instalación hasta el mantenimiento de una instalación existente.
+        </p><a href="#contacto" class="inline-block bg-primary hover:bg-slate-700 text-white font-semibold py-3 px-8 rounded-full transition">
+          Consultar mi proyecto
+        </a></div><div class="lg:col-span-7 space-y-6"><article class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col sm:flex-row gap-6 items-start"><div class="w-14 h-14 rounded-full border-2 border-gray-100 flex items-center justify-center text-accent font-bold text-xl shrink-0">01</div><div><h4 class="text-2xl font-bold text-primary mb-3"><i class="fa-solid fa-bolt text-accent mr-2"></i>Instalaciones eléctricas</h4><p class="text-secondary leading-relaxed mb-4">
+              Realizamos todo tipo de instalaciones eléctricas, tanto en viviendas como en locales, comercios y otros espacios. Nos encargamos de nuevas instalaciones, ampliaciones, modificaciones y renovación de instalaciones existentes.
+            </p><p class="text-sm text-secondary"><strong class="text-primary">Incluye:</strong> puntos de luz y enchufes, iluminación, cuadros eléctricos, ampliaciones de circuitos, instalaciones para reformas y obra nueva.</p></div></article><article class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col sm:flex-row gap-6 items-start"><div class="w-14 h-14 rounded-full border-2 border-gray-100 flex items-center justify-center text-accent font-bold text-xl shrink-0">02</div><div><h4 class="text-2xl font-bold text-primary mb-3"><i class="fa-solid fa-screwdriver-wrench text-accent mr-2"></i>Mantenimiento y reparaciones</h4><p class="text-secondary leading-relaxed mb-4">
+              Realizamos diagnósticos de averías, reparación de instalaciones, sustitución de componentes deteriorados y mantenimiento preventivo.
+            </p><p class="text-sm text-secondary"><strong class="text-primary">Trabajos habituales:</strong> localización de averías, reparación de enchufes e interruptores, revisión de cuadros eléctricos, detección de fallos y actualización de instalaciones.</p></div></article><article class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col sm:flex-row gap-6 items-start"><div class="w-14 h-14 rounded-full border-2 border-gray-100 flex items-center justify-center text-accent font-bold text-xl shrink-0">03</div><div><h4 class="text-2xl font-bold text-primary mb-3"><i class="fa-solid fa-solar-panel text-accent mr-2"></i>Placas solares</h4><p class="text-secondary leading-relaxed mb-4">
+              Te ayudamos a aprovechar la energía solar mediante instalaciones fotovoltaicas adaptadas a las características y necesidades de cada vivienda o negocio.
+            </p><p class="text-sm text-secondary"><strong class="text-primary">Soluciones:</strong> instalaciones solares fotovoltaicas, autoconsumo, sistemas para viviendas y negocios, ampliaciones y revisión de instalaciones solares.</p></div></article><article class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col sm:flex-row gap-6 items-start"><div class="w-14 h-14 rounded-full border-2 border-gray-100 flex items-center justify-center text-accent font-bold text-xl shrink-0">04</div><div><h4 class="text-2xl font-bold text-primary mb-3"><i class="fa-solid fa-charging-station text-accent mr-2"></i>Puntos de recarga para vehículos eléctricos</h4><p class="text-secondary leading-relaxed mb-4">
+              Instalamos puntos de recarga para vehículos eléctricos en viviendas, garajes y otros espacios, adaptando la solución a las características de la instalación y las necesidades del usuario.
+            </p><p class="text-sm text-secondary"><strong class="text-primary">Instalación en:</strong> viviendas unifamiliares, garajes privados, plazas de aparcamiento, comunidades de propietarios y empresas.</p></div></article></div></div></div></section><section id="proceso" class="py-24 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center max-w-3xl mx-auto mb-14"><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Cómo trabajamos</h2><h3 class="text-4xl md:text-5xl font-extrabold text-primary">Un proceso sencillo y claro</h3><p class="mt-5 text-secondary leading-relaxed">Cuéntanos qué necesitas y estudiaremos tu caso para encontrar una solución adecuada.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="p-8 rounded-3xl bg-bgSoft"><div class="text-accent text-3xl mb-5"><i class="fa-solid fa-comments"></i></div><span class="text-xs font-bold uppercase tracking-widest text-secondary">01</span><h4 class="text-xl font-bold text-primary mt-2 mb-3">Cuéntanos tu necesidad</h4><p class="text-secondary text-sm leading-relaxed">Contacta con nosotros por WhatsApp, teléfono o email y explícanos el trabajo que necesitas.</p></div><div class="p-8 rounded-3xl bg-bgSoft"><div class="text-accent text-3xl mb-5"><i class="fa-solid fa-magnifying-glass"></i></div><span class="text-xs font-bold uppercase tracking-widest text-secondary">02</span><h4 class="text-xl font-bold text-primary mt-2 mb-3">Estudiamos el proyecto</h4><p class="text-secondary text-sm leading-relaxed">Valoramos las características de la instalación y las necesidades del espacio para plantear una solución adecuada.</p></div><div class="p-8 rounded-3xl bg-bgSoft"><div class="text-accent text-3xl mb-5"><i class="fa-solid fa-circle-check"></i></div><span class="text-xs font-bold uppercase tracking-widest text-secondary">03</span><h4 class="text-xl font-bold text-primary mt-2 mb-3">Realizamos el trabajo</h4><p class="text-secondary text-sm leading-relaxed">Una vez definida la solución, llevamos a cabo el trabajo de forma organizada y profesional.</p></div></div></div></section>
+
+<section class="py-24 bg-primary text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Nuestro trabajo</h2>
+        <h3 class="text-4xl md:text-5xl font-extrabold leading-tight">Proyectos eléctricos y energéticos</h3>
+      </div>
+      <p class="max-w-md text-gray-300 text-sm md:text-base">Una selección visual de nuestros últimos trabajos de electricidad general, montaje de paneles solares y sistemas de almacenamiento.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 relative rounded-3xl overflow-hidden group h-80 md:h-[500px]">
+        <img src="images/instalacion-solar-plana.jpg" alt="Instalador montando paneles solares en cubierta plana" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8">
+          <h4 class="text-2xl font-bold mb-2">Instalaciones Fotovoltaicas</h4>
+          <p class="text-gray-300 text-sm">Montaje profesional de paneles solares adaptados a cada cubierta.</p>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-6">
+        <div class="rounded-3xl overflow-hidden h-40 md:h-[238px] relative group">
+          <img src="images/electricista-cuadro.jpg" alt="Electricista revisando cuadro eléctrico con multímetro" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-5">
+            <span class="font-semibold text-white">Electricidad General</span>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden h-40 md:h-[238px] relative group">
+          <img src="images/solar-tejado.jpg" alt="Paneles solares instalados en tejado de tejas" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-5">
+            <span class="font-semibold text-white">Autoconsumo Residencial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div class="relative rounded-3xl overflow-hidden group h-64 md:h-80">
+        <img src="images/instalacion-tesla.jpg" alt="Instalación de inversor y batería Tesla Powerwall" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/10 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8">
+          <h4 class="text-xl font-bold mb-2">Sistemas de Almacenamiento Premium</h4>
+          <p class="text-gray-300 text-sm">Instalación de baterías Tesla Powerwall para máxima independencia energética.</p>
+        </div>
+      </div>
+      <div class="relative rounded-3xl overflow-hidden group h-64 md:h-80">
+        <img src="images/instalacion-huawei.jpg" alt="Instalación de inversor y batería Huawei" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/10 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8">
+          <h4 class="text-xl font-bold mb-2">Inversores y Baterías Inteligentes</h4>
+          <p class="text-gray-300 text-sm">Equipos de última generación Huawei para optimizar el rendimiento solar.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="nosotros" class="py-24 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+  
+  <div class="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-xl">
+    <img src="images/nosotros-1.jpg" alt="Profesional hablando con cliente" class="w-full h-full object-cover">
+  </div>
+
+  <div><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Quiénes somos</h2><h3 class="text-3xl md:text-4xl font-extrabold text-primary leading-tight mb-6">
+          Electricidad y energía con una atención cercana
+        </h3><p class="text-secondary mb-8 leading-relaxed">
+          En ElectroPalma Energy trabajamos para ofrecer soluciones eléctricas y energéticas adaptadas a cada cliente. Nuestro objetivo es ayudarte a resolver tus necesidades de forma clara, práctica y profesional, tanto si necesitas una reparación como si estás pensando en instalar placas solares o un punto de recarga.
+        </p><div class="space-y-6 mb-10"><div class="flex items-start gap-4"><div class="text-accent mt-1 text-xl"><i class="fa-solid fa-circle-check"></i></div><div><h4 class="font-bold text-primary text-lg">Soluciones a medida</h4><p class="text-secondary text-sm mt-1">Cada instalación y cada espacio tienen necesidades diferentes. Estudiamos el proyecto antes de plantear la solución.</p></div></div><div class="flex items-start gap-4"><div class="text-accent mt-1 text-xl"><i class="fa-solid fa-circle-check"></i></div><div><h4 class="font-bold text-primary text-lg">Servicio cercano</h4><p class="text-secondary text-sm mt-1">Puedes contactar directamente por WhatsApp, teléfono o email para consultar tu proyecto.</p></div></div></div><a href="https://wa.me/34604122709?text=Hola%20ElectroPalma%20Energy,%20me%20gustar%C3%ADa%20consultar%20un%20servicio." class="inline-flex items-center gap-3 bg-primary hover:bg-slate-700 text-white font-semibold py-3 px-8 rounded-full transition"><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+        </a></div></div></div></section><section class="py-24 bg-bgSoft"><div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-12"><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Preguntas frecuentes</h2><h3 class="text-4xl font-extrabold text-primary">Antes de contactar</h3></div><div class="space-y-4"><details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-bold text-primary cursor-pointer">¿En qué zonas trabajáis?</summary><p class="mt-4 text-secondary leading-relaxed">Trabajamos en la Comunidad de Madrid y alrededores. Para otras provincias, puedes consultarnos disponibilidad.</p></details><details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-bold text-primary cursor-pointer">¿Qué tipo de instalaciones eléctricas realizáis?</summary><p class="mt-4 text-secondary leading-relaxed">Realizamos instalaciones eléctricas en viviendas, locales, comercios y otros espacios, además de ampliaciones, modificaciones y renovación de instalaciones existentes.</p></details><details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-bold text-primary cursor-pointer">¿Instaláis puntos de recarga para vehículos eléctricos?</summary><p class="mt-4 text-secondary leading-relaxed">Sí. Instalamos puntos de recarga en viviendas, garajes y otros espacios, adaptando la solución a las características de la instalación.</p></details><details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-bold text-primary cursor-pointer">¿Realizáis instalaciones de placas solares?</summary><p class="mt-4 text-secondary leading-relaxed">Sí. Realizamos soluciones fotovoltaicas adaptadas a las características y necesidades de cada vivienda o negocio.</p></details></div></div></section><section id="contacto" class="py-24 bg-primary text-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start"><div><h2 class="text-accent font-bold tracking-wide uppercase text-sm mb-3">Contacto</h2><h3 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">¿Necesitas un electricista?</h3><p class="text-gray-300 text-lg leading-relaxed mb-10">
+          Cuéntanos qué necesitas y estudiaremos tu caso para ofrecerte una solución adecuada.
+        </p><div class="space-y-5"><a href="https://wa.me/34604122709" class="flex items-center gap-4 hover:text-accent transition"><span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent"><i class="fa-brands fa-whatsapp text-xl"></i></span><span><strong class="block text-white">WhatsApp</strong>+34 604 12 27 09</span></a><a href="mailto:electropalma.energy@gmail.com" class="flex items-center gap-4 hover:text-accent transition"><span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent"><i class="fa-solid fa-envelope"></i></span><span><strong class="block text-white">Email</strong>electropalma.energy@gmail.com</span></a><div class="flex items-center gap-4"><span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent"><i class="fa-regular fa-clock"></i></span><span><strong class="block text-white">Horario</strong>8:00 a 18:00</span></div><div class="flex items-center gap-4"><span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent"><i class="fa-solid fa-location-dot"></i></span><span><strong class="block text-white">Zona de servicio</strong>Comunidad de Madrid y alrededores<br><small>Consultar disponibilidad para otras provincias</small></span></div></div></div><div class="bg-white rounded-3xl p-8 text-primary shadow-2xl"><h4 class="text-2xl font-bold mb-2">Solicita información</h4><p class="text-secondary text-sm mb-7">Escríbenos y cuéntanos brevemente qué necesitas.</p><form onsubmit="sendWhatsApp(event)" class="space-y-5"><div><label for="nombre" class="block text-sm font-semibold mb-2">Nombre</label><input id="nombre" required type="text" class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-accent" placeholder="Tu nombre"></div><div><label for="telefono" class="block text-sm font-semibold mb-2">Teléfono</label><input id="telefono" type="tel" class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-accent" placeholder="Tu teléfono"></div><div><label for="servicio" class="block text-sm font-semibold mb-2">Servicio que necesitas</label><select id="servicio" class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-accent"><option>Instalación eléctrica</option><option>Mantenimiento o reparación</option><option>Placas solares</option><option>Punto de recarga</option><option>Otro</option></select></div><div><label for="mensaje" class="block text-sm font-semibold mb-2">Cuéntanos tu necesidad</label><textarea id="mensaje" rows="4" class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-accent" placeholder="Describe brevemente el trabajo..."></textarea></div><button type="submit" class="w-full bg-accent hover:bg-accentHover text-primary font-bold py-4 rounded-xl transition"><i class="fa-brands fa-whatsapp mr-2"></i> Enviar consulta por WhatsApp
+          </button><p class="text-xs text-slate-500 text-center">El formulario abre WhatsApp con tu consulta preparada. No requiere servidor.</p></form></div></div></div></section><footer class="bg-slate-950 text-slate-400 py-10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col md:flex-row justify-between gap-6 items-start md:items-center"><div class="footer-logo flex items-center gap-3"><span class="electropalma-mark" aria-hidden="true"><img src="images/logo.jpg" alt="Logo ElectroPalma"></span><span class="electropalma-wordmark"><span class="name text-white">ElectroPalma</span><span class="descriptor text-slate-400">INSTALACIONES ELÉCTRICAS</span></span></div><p class="text-sm mt-2">Electricidad, energía solar y soluciones de movilidad eléctrica.</p><div class="text-sm md:text-right"><p>Comunidad de Madrid y alrededores</p><p class="mt-1">8:00 – 18:00 · electropalma.energy@gmail.com</p></div></div><div class="border-t border-white/10 mt-8 pt-6 text-xs">
+      © <span id="year"></span> ElectroPalma Energy. Todos los derechos reservados.
+    </div></div></footer><a href="https://wa.me/34604122709?text=Hola%20ElectroPalma%20Energy,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n." aria-label="Contactar por WhatsApp"
+   class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-accent hover:bg-accentHover text-primary flex items-center justify-center text-2xl shadow-xl transition hover:scale-105"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  function sendWhatsApp(event) {
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const servicio = document.getElementById('servicio').value;
+    const mensaje = document.getElementById('mensaje').value.trim();
+    const text = `Hola ElectroPalma Energy,%0A%0ANombre: ${encodeURIComponent(nombre)}%0ATeléfono: ${encodeURIComponent(telefono)}%0AServicio: ${encodeURIComponent(servicio)}%0A%0AConsulta: ${encodeURIComponent(mensaje)}`;
+    window.open(`https://wa.me/34604122709?text=${text}`, '_blank');
+  }
+
+  const btnMenu = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    if (menu.classList.contains('hidden')) {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    } else {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-xmark');
+    }
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    });
+  });
+</script>
+</body></html>
